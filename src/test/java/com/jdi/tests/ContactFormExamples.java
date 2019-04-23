@@ -8,27 +8,27 @@ import org.testng.annotations.Test;
 import java.util.List;
 
 import static com.jdi.states.State.loggedIn;
-import static com.jdi.test.data.ContactsDataProvider.FULL_CONTACT;
-import static com.jdi.test.data.ContactsDataProvider.SIMPLE_CONTACT;
+import static com.jdi.test.data.ContactsDataProvider.*;
 import static jdisite.JDISite.contactPage;
 import static jdisite.JDISite.sideMenu;
 import static jdisite.enums.MenuOptions.ContactForm;
 import static jdisite.pages.ContactPage.contactForm;
-import static jdisite.pages.ContactPage.contactForm1;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.hasItem;
 
 public class ContactFormExamples implements TestsInit {
+
     @BeforeMethod
     public void before() {
         loggedIn();
     }
+
     @Test
     public void simpleContactFormTest() {
         sideMenu.select("Contact form");
         contactPage.checkOpened();
-        contactForm1.submit(SIMPLE_CONTACT);
-        contactForm1.check(SIMPLE_CONTACT);
+        contactForm.submit(SIMPLE_CONTACT);
+        contactForm.check(SIMPLE_CONTACT);
     }
     @Test
     public void fullContactFormTest() {

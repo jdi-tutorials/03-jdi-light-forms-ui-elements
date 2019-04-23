@@ -9,9 +9,9 @@ import com.epam.jdi.light.ui.html.common.TextField;
 import com.epam.jdi.light.ui.html.complex.Combobox;
 import com.epam.jdi.light.ui.html.complex.Dropdown;
 import com.epam.jdi.light.ui.html.complex.MultiDropdown;
-import jdisite.entities.ContactInfo2;
+import jdisite.entities.ContactInfo;
 
-public class ContactForm extends Form<ContactInfo2> {
+public class ContactForm extends Form<ContactInfo> {
     @UI("#passport") Checkbox passport;
     @UI("#name") TextField name;
     @UI("#last-name") TextField lastName;
