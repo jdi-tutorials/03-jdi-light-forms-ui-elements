@@ -24,18 +24,18 @@ public class ContactFormExamples implements TestsInit {
     }
 
     @Test
-    public void simpleContactFormTest() {
-        sideMenu.select("Contact form");
-        contactPage.checkOpened();
-        contactForm.submit(SIMPLE_CONTACT);
-        contactForm.check(SIMPLE_CONTACT);
-    }
-    @Test
     public void fullContactFormTest() {
-        sideMenu.select(ContactForm);
+        sideMenu.select("Contact form");
         contactPage.checkOpened();
         contactForm.submit(FULL_CONTACT);
         contactForm.check(FULL_CONTACT);
+    }
+    @Test
+    public void simpleContactFormTest() {
+        sideMenu.select(ContactForm);
+        contactPage.checkOpened();
+        contactForm.submit(SIMPLE_CONTACT);
+        contactForm.check(SIMPLE_CONTACT);
     }
     @Test
     public void failCheckExample() {
