@@ -1,14 +1,16 @@
 package jdisite.sections;
 
+import com.epam.jdi.light.elements.complex.Combobox;
+import com.epam.jdi.light.elements.complex.Selector;
+import com.epam.jdi.light.elements.complex.dropdown.Dropdown;
 import com.epam.jdi.light.elements.composite.Form;
-import com.epam.jdi.light.elements.pageobjects.annotations.simple.UI;
-import com.epam.jdi.light.ui.html.common.Button;
-import com.epam.jdi.light.ui.html.common.Checkbox;
-import com.epam.jdi.light.ui.html.common.TextArea;
-import com.epam.jdi.light.ui.html.common.TextField;
-import com.epam.jdi.light.ui.html.complex.Combobox;
-import com.epam.jdi.light.ui.html.complex.Dropdown;
-import com.epam.jdi.light.ui.html.complex.MultiDropdown;
+import com.epam.jdi.light.elements.interfaces.complex.IsCombobox;
+import com.epam.jdi.light.elements.pageobjects.annotations.locators.UI;
+import com.epam.jdi.light.ui.html.elements.common.Button;
+import com.epam.jdi.light.ui.html.elements.common.Checkbox;
+import com.epam.jdi.light.ui.html.elements.common.TextArea;
+import com.epam.jdi.light.ui.html.elements.common.TextField;
+import com.epam.jdi.light.ui.html.elements.complex.DataListOptions;
 import jdisite.entities.ContactInfo;
 
 public class ContactForm extends Form<ContactInfo> {
@@ -19,8 +21,7 @@ public class ContactForm extends Form<ContactInfo> {
     @UI("#passport-number") TextField passportNumber;
     @UI("#passport-seria") TextField passportSeria;
     @UI("#gender") Dropdown gender;
-    @UI("#religion") Combobox religion;
-    @UI("#weather") MultiDropdown weather;
+    @UI("#religion") DataListOptions religion;
 
     @UI("#accept-conditions") public Checkbox acceptConditions;
     @UI("#description") TextArea description;
