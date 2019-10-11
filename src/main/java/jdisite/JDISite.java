@@ -5,8 +5,8 @@ import com.epam.jdi.light.elements.composite.WebPage;
 import com.epam.jdi.light.elements.pageobjects.annotations.JSite;
 import com.epam.jdi.light.elements.pageobjects.annotations.Url;
 import com.epam.jdi.light.elements.pageobjects.annotations.locators.UI;
-import com.epam.jdi.light.ui.html.elements.common.Text;
 import com.epam.jdi.light.ui.html.elements.common.Link;
+import com.epam.jdi.light.ui.html.elements.common.Text;
 import jdisite.pages.ContactPage;
 import jdisite.sections.LoginForm;
 

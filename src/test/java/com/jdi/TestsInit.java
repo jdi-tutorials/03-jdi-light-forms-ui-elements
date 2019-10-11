@@ -1,7 +1,5 @@
 package com.jdi;
 
-import com.epam.jdi.light.elements.interfaces.complex.IsCombobox;
-import com.epam.jdi.light.ui.html.elements.complex.DataListOptions;
 import jdisite.JDISite;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;

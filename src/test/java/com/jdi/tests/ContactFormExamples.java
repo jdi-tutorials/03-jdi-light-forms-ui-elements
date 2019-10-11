@@ -8,7 +8,8 @@ import org.testng.annotations.Test;
 import java.util.List;
 
 import static com.jdi.states.State.loggedIn;
-import static com.jdi.test.data.ContactsDataProvider.*;
+import static com.jdi.test.data.ContactsDataProvider.FULL_CONTACT;
+import static com.jdi.test.data.ContactsDataProvider.SIMPLE_CONTACT;
 import static jdisite.JDISite.contactPage;
 import static jdisite.JDISite.sideMenu;
 import static jdisite.enums.MenuOptions.ContactForm;
